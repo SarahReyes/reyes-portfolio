@@ -1,0 +1,103 @@
+
+/*
+FONTS:
+font-family: 'Rubik Mono One', sans-serif; - big blocky
+font-family: 'Mandali', sans-serif; - thin rounded edges
+font-family: 'Shanti', sans-serif; - thin clean lines(like it)
+font-family: 'Assistant', sans-serif; - even thinner and cleaner, but not the "g" I like
+font-family: 'Pavanam', sans-serif; - WINNER - clean and thin, good "g"
+font-family: 'Chonburi', cursive; - 50s fat font with thin partials
+font-family: 'Bowlby One', cursive; - fat and cartoonish
+
+COLORS:
+#4ECDC4 - blue/green
+#515151 - dark gray
+#2A2A2A - hover darker gray
+#FFFFFF - white
+*/
+
+/*general settings*/
+body {
+	font-family: 'Pavanam', sans-serif;
+	padding-top: 50px;
+}
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+	background-color: #FFFFFF;
+}
+/*general settings end*/
+
+
+/*nav bar*/
+/*my name*/
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+	color: #4ECDC4;
+	background-color: #FFFFFF;
+}
+/*links*/
+.navbar-default .navbar-nav>li>a {
+    color: #4ECDC4;
+	margin-right: 20px;
+	background-color: #FFFFFF;
+}
+/*nav bar end*/
+
+
+/*jumbotron*/
+.jumbotron {
+	background-color: #4ECDC4;
+	color: #FFFFFF;
+}
+.container-fluid .jumbotron {
+    border-radius: 0px;
+}
+/*jumbotron end*/
+
+
+/*about*/
+#about {
+    background-color: #515151;
+    color: #FFFFFF;
+    height: 300px;
+}
+/*about end*/
+
+
+/*work examples*/
+#work {
+	background-color: #FFFFFF;
+	color: #515151;
+	height: 300px;
+}
+/*work examples end*/
+
+
+/*contact*/
+#contact {
+	background-color: #4ECDC4;
+	color: #515151;
+}
+/*button*/
+.btn-success {
+    color: #FFFFFF;
+    background-color: #515151;
+    border-color: #515151;
+}
+.btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success:active.focus, .btn-success:active:focus, .btn-success:active:hover, .open>.dropdown-toggle.btn-success.focus, .open>.dropdown-toggle.btn-success:focus, .open>.dropdown-toggle.btn-success:hover {
+    background-color: #2A2A2A;
+    border-color: #2A2A2A;
+}
+.btn-success.active, .btn-success:active, .open>.dropdown-toggle.btn-success {
+    background-color: #2A2A2A;
+    border-color: #2A2A2A;
+}
+.btn-success:hover {
+	background-color: #2A2A2A;
+    border-color: #2A2A2A;
+}
+.text-muted {
+    color: #515151;
+}
+/*contact end*/
