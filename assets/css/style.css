@@ -49,9 +49,13 @@ body {
 .jumbotron {
 	background-color: #4ECDC4;
 	color: #FFFFFF;
+	margin-bottom: 0px;
 }
 .container-fluid .jumbotron {
     border-radius: 0px;
+}
+.jumbotron h1 {
+	font-size: 300px;
 }
 /*jumbotron end*/
 
@@ -60,7 +64,18 @@ body {
 #about {
     background-color: #515151;
     color: #FFFFFF;
-    height: 300px;
+    height: 400px;
+	margin-top: 0px;
+}
+#profile-pic {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	margin-top: 20px;
+}
+#about p {
+	font-size: 24px;
+	margin: 15px;
 }
 /*about end*/
 
