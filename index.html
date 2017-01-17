@@ -10,177 +10,71 @@
 
 	<title>Sarah Reyes</title>
 
-	<!-- bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Compiled and minified CSS for Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<!-- Materialize Icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Assistant|Bowlby+One|Chonburi|Mandali|Pavanam|Rubik+Mono+One|Shanti" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Assistant|Bowlby+One|Chonburi|Mandali|Pavanam|Rubik+Mono+One|Shanti|Josefin Sans" rel="stylesheet">
 	<!-- font awesome -->
 	<link rel="stylesheet" href="assets/js/font-awesome-4.7.0/css/font-awesome.min.css">
-	<!-- remodal - modal css -->
-	<!-- <link rel="stylesheet" href="../node_modules/remodal/dist/remodal.css"> -->
-	<!-- <link rel="stylesheet" href="assets/css/remodal.css"> -->
-	<!-- <link rel="stylesheet" href="assets/css/remodal-style.css"> -->
 	<!-- Theme CSS -->
 	<link href="assets/css/style.css" rel="stylesheet">
-	<!-- date and time picker -->
-	<link rel="stylesheet" type="text/css" href="assets/js/datetimepicker-master/jquery.datetimepicker.css" />
 </head>
 
 <body>
 
-	<!-- navigation bar -->
-	<nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
-		<div class="container-fluid">
-			<!-- group brand and toggle for better mobile display -->
-			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-	                </button>
-				<a class="navbar-brand page-scroll" href="#page-top">Sarah Reyes</a>
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+			<a href="#" class="brand-logo">Sarah Reyes</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+	  			<li><a href=""></a></li>
+			</ul>
 			</div>
-			<!-- collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="hidden">
-						<a href="#page-top"></a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#about">about</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#work">work</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#contact">contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- container-fluid end -->
-	</nav>
-	<!-- nav bar end -->
+		</nav>
+	</header>
 
-
-	<div class="container-fluid">
-		<!-- jumbotron -->
-		<div class="jumbotron text-center">
-			<h1>hello</h1>
-		</div>
-		<!-- jumbotron end -->
-
-		<!-- about -->
-		<div class="row" id="about">
-			<div class="col-sm-12 text-center">
-				<image src='assets/images/updated-profile-pic.jpg' id='profile-pic'/></image>
-				<p>
-					My name is Sarah Reyes. I am a software developer living in Kansas City.
-					Blah blah blah, enough about me I'd like to learn more about you! Use my
-					contact form to shoot me a note
-				</p>
-			</div>
-		</div>
-		<!-- about end -->
-
-		<!-- work examples -->
-		<div class="row" id="work">
-			<div class="col-sm-12 text-center">
-				<div class="work">
-					here are a bunch of my work examples
+	<main>
+        <div class="container">
+			<!-- about -->
+			<div class="row" id="about">
+				<div class="col-sm-12 center">
+					<image class="center" src='assets/images/updated-profile-pic.jpg' id='profile-pic'/></image>
+					<p>
+						Hi, my name is Sarah. I like reading, hiking, movies, dogs, and clean code.
+						I'm a film school video editing graduate who has found a passion for programming. Similar
+						to editing, I love the planning, organization, and structure of programming.
+						I can't wait to write, produce, edit, and air my next app. Oh wait, I mean
+						pseudocode, code, debug, and deploy my next app.
+					</p>
 				</div>
 			</div>
 		</div>
-		<!-- work examples end -->
+    </main>
 
-		<!-- contact -->
-		<div class="row" id="contact">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h1>Contact Sarah</h1>
-				<form id="contact-form" method="post" action="assets/php/contact.php" role="form">
-					<div class="messages"></div>
-					<div class="controls">
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="form_name">first name *</label>
-									<input id="form_name" type="text" name="name" class="form-control" placeholder="please enter your first name *" required="required" data-error="First name is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="form_lastname">last name *</label>
-									<input id="form_lastname" type="text" name="surname" class="form-control" placeholder="please enter your last name *" required="required" data-error="Last name is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="form_email">email *</label>
-									<input id="form_email" type="email" name="email" class="form-control" placeholder="please enter your email *" required="required" data-error="Valid email is required.">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="form-group">
-									<label for="form_phone">phone</label>
-									<input id="form_phone" type="tel" name="phone" class="form-control" placeholder="please enter your phone number">
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-									<label for="form_message">message *</label>
-									<textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-									<div class="help-block with-errors"></div>
-								</div>
-							</div>
-							<div class="col-md-12">
-								<input type="submit" class="btn btn-success btn-send" value="send message">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<p class="text-muted"><strong>*</strong> These fields are required. </p>
-							</div>
-						</div>
-					</div>
-				</form>
+	<footer class="page-footer">
+
+		<div class="footer-copyright">
+			<div class="container">
+			© 2017 Copyright Sarah Reyes
+			<a href="https://github.com/SarahReyes"><i class="fa fa-github fa-2x right"  id="footer-icons" aria-hidden="true"></i></a>
+			<a href="https://www.linkedin.com/in/sarah-reyes"><i class="fa fa-linkedin fa-2x right"  id="footer-icons" aria-hidden="true"></i></a>
 			</div>
 		</div>
-		<!-- contact end -->
-
-		<!-- footer -->
-		<footer class="site-footer">
-			<div class="footer-upper">
-				<div class="container">
-					<nav class="row" role="navigation">
-						<div class="col-sm-4 center">
-							<h5>footer</h5>
-						</div>
-						<div class="col-sm-4 center">
-							<h5>footer links and stuff</h5>
-						</div>
-						<div class="col-sm-4 center">
-							<h5>footer content</h5>
-						</div>
-					</nav>
-				</div>
-			</div>
-		</footer>
-		<!-- footer end -->
-
-	</div>
-	<!-- container-fluid end -->
+	</footer>
 
 
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src="assets/js/validator.js"></script>
-	<script src="assets/js/contact.js"></script>
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Compiled and minified JavaScript for Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<!-- Backstretch Plug In -->
+	<script type="text/javascript" src="assets/js/backstretch_plugin.min.js"></script>
+	<!-- backstretch jquery -->
+	<script type="text/javascript" src="assets/js/backstretch.js"></script>
+
 </body>
 
 </html>
