@@ -66,3 +66,8 @@ footer.page-footer {
 .fa {
     color: #FFFFFF;
 }
+#contact-footer {
+	color: #FFFFFF;
+	font-size: 22px;
+	margin-bottom: 2px;
+}
