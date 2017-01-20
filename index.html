@@ -27,7 +27,18 @@
 	<header>
 		<nav>
 			<div class="nav-wrapper">
-			<a class="brand-logo">Sarah Reyes</a>
+				<a href="#!" class="brand-logo">Sarah Reyes</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse right-align"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+				    <li><a href="#about">about</a></li>
+				    <li><a href="#work">work</a></li>
+				    <li><a href="#contact">contact</a></li>
+				</ul>
+				<ul class="right side-nav" id="mobile-demo">
+				    <li><a href="#about">about</a></li>
+				    <li><a href="#work">work</a></li>
+				    <li><a href="#contact">contact</a></li>
+				</ul>
 			</div>
 		</nav>
 	</header>
@@ -35,31 +46,37 @@
 	<main>
         <div class="container">
 			<!-- about -->
-			<div class="row" id="about">
-				<div class="col-sm-12 center">
+			<div class="row scrollspy" id="about">
+				<div class="col-sm-12 center-align">
 					<image class="center" src='assets/images/updated-profile-pic.jpg' id='profile-pic'/></image>
 					<h3>web developer</h3>
 					<p>
-						Hi, my name is Sarah. I like reading, hiking, movies, dogs, and clean code.
-						I'm a film school video editing graduate who has found a passion for writing code. Similar
-						to editing, I love the planning, organization, and structure of programming.
-						I can't wait to write, produce, edit, and air my next app. Oh wait, I mean
-						pseudocode, code, debug, and deploy my next app.
+						Hi, my name is Sarah. I’m a web developer who specializes in JavaScript,
+						React, CSS, Express, and Node. As someone who started my career as a video
+						editor, I greatly enjoy planning, organizing, and collaboration. I have an
+						eye for detail, and I love solving problems. These skills have translated well
+						into my passion for programming. I look forward to working with you to write,
+						produce, edit, and air our next app. Oh wait, I mean pseudocode, code, debug,
+						and deploy our next app.
 					</p>
+				</div>
+			</div>
+			<!-- work -->
+			<div class="row scrollspy center-align" id="work">
+
+			</div>
+			<!-- contact -->
+			<div class="row scrollspy center-align" id="contact">
+				<div class="col l4 offset-l2 s12 center-align">
+					<a href="https://github.com/SarahReyes" class="tooltipped" data-position="top" data-delay="50" data-tooltip="My GitHub"><i class="fa fa-github fa-5x center-align"  id="footer-icons" aria-hidden="true"></i></a>
+					<a href="https://www.linkedin.com/in/sarah-reyes" class="tooltipped" data-position="top" data-delay="50" data-tooltip="My LinkedIn"><i class="fa fa-linkedin fa-5x center-align"  id="footer-icons" aria-hidden="true"></i></a>
+					<a href="mailto:siwreyes@gmail.com" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Email Me"><i class="fa fa-envelope-o fa-5x center-align" id="footer-icons" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</div>
     </main>
 
 	<footer class="page-footer">
-		<div class="container">
-              <div class="col l4 offset-l2 s12 center-align">
-				  <a href="https://github.com/SarahReyes" class="tooltipped" data-position="top" data-delay="50" data-tooltip="My GitHub"><i class="fa fa-github fa-2x"  id="footer-icons" aria-hidden="true"></i></a>
-				  <a href="https://www.linkedin.com/in/sarah-reyes" class="tooltipped" data-position="top" data-delay="50" data-tooltip="My LinkedIn"><i class="fa fa-linkedin fa-2x"  id="footer-icons" aria-hidden="true"></i></a>
-				  <a href="mailto:siwreyes@gmail.com" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Email Me"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
-              </div>
-          </div>
-
 		<div class="footer-copyright">
 			<div class="container center-align" id="footer">
 				© 2017 Copyright Sarah Reyes
@@ -77,6 +94,8 @@
 	<script type="text/javascript" src="assets/js/backstretch_plugin.min.js"></script>
 	<!-- backstretch jquery -->
 	<script type="text/javascript" src="assets/js/backstretch.js"></script>
+	<!-- materialize jquery -->
+	<script type="text/javascript" src="assets/js/materialize.js"></script>
 
 </body>
 
