@@ -52,11 +52,33 @@ nav .brand-logo {
 #about p {
 	font-size: 24px;
 	margin-top: 15px;
-	background-color:rgba(0, 0, 0, 0.1);
+	background-color:rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
 
 }
 h3 {
 	font-weight: bold;
+}
+/*portfolio */
+#portfolio {
+	color: #FFFFFF;
+}
+.portfolio-img {
+	height: 100%;
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.collapsible {
+	width: 100%;
+	color: #515151;
+}
+.collapsible-body p  {
+	background-color: #515151;
+	color: #FFFFFF;
+}
+#drop-down-icon {
+	color: #515151;
 }
 /*contact*/
 /*@media only screen and (min-width: 993px)*/
