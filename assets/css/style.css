@@ -66,12 +66,14 @@ h3 {
 .portfolio-img {
 	height: 100%;
 	width: 100%;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 .collapsible {
 	width: 100%;
 	color: #515151;
+	margin-top: 0px;
+	padding-top: 0px;
 }
 .collapsible-body p  {
 	background-color: #515151;
