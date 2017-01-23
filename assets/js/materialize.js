@@ -11,5 +11,12 @@ $(document).ready(function() {
   		}
 	);
 	// collapsible menus
-	 $('.collapsible').collapsible();
+	$('.collapsible').collapsible();
+	// smooth scroll
+	$('.scrollspy').scrollSpy();
+	// fixed action button
+	$('.fixed-action-btn').openFAB();
+ 	$('.fixed-action-btn').closeFAB();
+ 	$('.fixed-action-btn.toolbar').openToolbar();
+ 	$('.fixed-action-btn.toolbar').closeToolbar();
 });

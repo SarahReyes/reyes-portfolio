@@ -26,14 +26,36 @@ main {
 	flex: 1 0 auto;
 }
 
+/*scroll to the top button */
+.btn-floating {
+	background-color: transparent;
+	border: 1px solid #FFFFFF;
+}
+.btn-floating:hover, .btn-floating:focus  {
+    background-color: #515151;
+}
+#scroll-top-icon {
+	margin: 0px;
+	padding: 0px;
+}
+
 /*nav bar*/
 nav {
-	background-color: transparent;
+	background-color: #FFFFFF;
+	color: #515151;
 	border: none;
 	box-shadow: none;
 }
 nav .brand-logo {
 	padding-left: 25px;
+	color: #515151;
+	font-size: 24px;
+}
+nav ul a {
+	color: #515151;
+}
+nav a {
+	color: #515151;
 }
 /*main content*/
 /*about*/
@@ -41,7 +63,7 @@ nav .brand-logo {
     color: #FFFFFF;
     height: 100%;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 }
 #profile-pic {
 	height: 150px;
@@ -52,7 +74,7 @@ nav .brand-logo {
 #about p {
 	font-size: 24px;
 	margin-top: 15px;
-	background-color:rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.4);
 	border-radius: 10px;
 
 }
@@ -60,14 +82,17 @@ h3 {
 	font-weight: bold;
 }
 /*portfolio */
-#portfolio {
+#portfolio h2 {
 	color: #FFFFFF;
+	margin-bottom: -30px;
+	font-weight: 400;
+	letter-spacing: 1px;
 }
 .portfolio-img {
 	height: 100%;
 	width: 100%;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
+	margin-top: 50px;
+	margin-bottom: -9px;
 }
 .collapsible {
 	width: 100%;
@@ -75,28 +100,39 @@ h3 {
 	margin-top: 0px;
 	padding-top: 0px;
 }
-.collapsible-body p  {
+.collapsible-body {
 	background-color: #515151;
 	color: #FFFFFF;
 }
-#drop-down-icon {
-	color: #515151;
+.collapsible-header i {
+	margin-right: -37px;
+}
+
+#github-icons {
+	color: #FFFFFF;
 }
 /*contact*/
 /*@media only screen and (min-width: 993px)*/
 .row .col.offset-l2 {
     margin-left: 0px;
 }
+/*tooltip pop up*/
+.backdrop {
+    background-color: #515151;
+    padding-bottom: 50px;
+ }
 /*footer*/
 footer.page-footer {
     margin-top: 20px;
     padding-top: 20px;
     background-color: transparent;
 }
-.fa {
+#footer-icons {
     color: #FFFFFF;
-    margin-left: 10px;
-    margin-right: 10px;
+	margin-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+	font-size: 100px;
 }
 #contact-footer {
 	color: #FFFFFF;

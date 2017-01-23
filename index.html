@@ -28,17 +28,15 @@
 		<nav>
 			<div class="nav-wrapper">
 				<a href="#!" class="brand-logo">Sarah Reyes</a>
-				<a href="#" data-activates="mobile-demo" class="button-collapse right-align"><i class="material-icons">menu</i></a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
 				    <li><a href="#about">about</a></li>
 				    <li><a href="#portfolio">portfolio</a></li>
-					<li><a href="#work">work</a></li>
 				    <li><a href="#contact">contact</a></li>
 				</ul>
-				<ul class="right side-nav" id="mobile-demo">
+				<ul class="side-nav" id="mobile-demo">
 				    <li><a href="#about">about</a></li>
 				    <li><a href="#portfolio">portfolio</a></li>
-					<li><a href="#work">work</a></li>
 				    <li><a href="#contact">contact</a></li>
 				</ul>
 			</div>
@@ -47,18 +45,23 @@
 
 	<main>
         <div class="container">
+			<!-- fixed button scroll to top  -->
+			<div class="fixed-action-btn">
+				<a href="#about" class="btn-floating btn-large" id="scroll-top-btn">
+					<i class="fa fa-arrow-up" aria-hidden="true" id="scroll-top-icon"></i>
+				</a>
+			</div>
 			<!-- about -->
 			<div class="row scrollspy" id="about">
 				<div class="col s12 center-align">
 					<image class="center" src='assets/images/updated-profile-pic.jpg' id='profile-pic'/></image>
 					<h3>web developer</h3>
 					<p>
-						Hi, my name is Sarah. I’m a web developer who specializes in JavaScript,
-						React, CSS, Express, Node, MongoDB, and MySql. As someone who started my career as a video
-						editor, I greatly enjoy planning, organizing, and collaboration. I have an
-						eye for detail, and I love solving problems. These skills have translated well
-						into my passion for programming. I look forward to working with you to write,
-						produce, edit, and air our next app. Oh wait, I mean pseudocode, code, debug,
+						Hi, my name is Sarah. I’m a web developer who works in MongoDB, Express, React, Node.js, HTML,
+						CSS, JavaScript, MySQL.  As someone who started my career as a video editor, I greatly enjoy
+						planning, organizing, and collaboration. I have an eye for detail, and I love solving problems.
+						These skills have translated well into my passion for programming. I look forward to working
+						with you to write, produce, edit, and air our next app. Oh wait, I mean pseudocode, code, debug,
 						and deploy our next app.
 					</p>
 				</div>
@@ -67,7 +70,7 @@
 			<div class="row scrollspy center-align" id="portfolio">
 				<h2>portfolio</h2>
 				<div class="row">
-					<div class="col s6 center-align">
+					<div class="col s12 center-align">
 						<img src="assets/images/lego.png" class="portfolio-img" />
 						<ul class="collapsible" data-collapsible="accordion">
 							<li>
@@ -90,12 +93,14 @@
 							<li>
 								<div class="collapsible-header"><i class="fa fa-arrow-down" aria-hidden="true" id="drop-down-icon"></i>Link</div>
 								<div class="collapsible-body">
-									<a href="https://github.com/SarahReyes/week-4-game" target="_blank"><i class="fa fa-github fa-5x" id="footer-icons" aria-hidden="true"></i></a>
+									<a href="https://github.com/SarahReyes/week-4-game" target="_blank"><i class="fa fa-github fa-5x" id="github-icons" aria-hidden="true"></i></a>
 								</div>
 							</li>
 						</ul>
 					</div>
-					<div class="col s6">
+				</div>
+				<div class="row">
+					<div class="col s12 center-align">
 						<img src="assets/images/trivia.png" class="portfolio-img" />
 						<ul class="collapsible" data-collapsible="accordion">
 							<li>
@@ -118,14 +123,14 @@
 							<li>
 								<div class="collapsible-header"><i class="fa fa-arrow-down" aria-hidden="true" id="drop-down-icon"></i>Link</div>
 								<div class="collapsible-body">
-									<a href="https://github.com/SarahReyes/trivia-game" target="_blank"><i class="fa fa-github fa-5x" id="footer-icons" aria-hidden="true"></i></a>
+									<a href="https://github.com/SarahReyes/trivia-game" target="_blank"><i class="fa fa-github fa-5x" id="github-icons" aria-hidden="true"></i></a>
 								</div>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col s6">
+					<div class="col s12 center-align">
 						<img src="assets/images/helpr.png" class="portfolio-img" />
 						<ul class="collapsible" data-collapsible="accordion">
 							<li>
@@ -136,7 +141,7 @@
 										a place where users can go to ask for help, or volunteer their time. For example, you may have an
 										elderly neighbor who needs help with yard work. You can go on Helpr and post a new project. Then
 										other users can sign up to volunteer for the project. I worked on all pieces of this group project.
-										I created the majority of the design and front-end. I wrote RESTful code for our database. I helped
+										I created the majority of the design and front-end. I wrote RESTful routes for our database. I helped
 										another student in my group with our Google Maps API.
 									</p>
 								</div>
@@ -150,13 +155,15 @@
 							<li>
 								<div class="collapsible-header"><i class="fa fa-arrow-down" aria-hidden="true" id="drop-down-icon"></i>Link</div>
 								<div class="collapsible-body">
-									<a href="https://github.com/SarahReyes/group-project-two" target="_blank"><i class="fa fa-github fa-5x" id="footer-icons" aria-hidden="true"></i></a>
+									<a href="https://github.com/SarahReyes/group-project-two" target="_blank"><i class="fa fa-github fa-5x" id="github-icons" aria-hidden="true"></i></a>
 								</div>
 							</li>
 						</ul>
 					</div>
-					<div class="col s6">
-						<img src="assets/images/helpr.png" class="portfolio-img" />
+				</div>
+				<div class="row">
+					<div class="col s12 center-align">
+						<img src="assets/images/roughtcut.png" class="portfolio-img" />
 						<ul class="collapsible" data-collapsible="accordion">
 							<li>
 								<div class="collapsible-header"><i class="fa fa-arrow-down" aria-hidden="true" id="drop-down-icon"></i>Roughcut</div>
@@ -164,8 +171,8 @@
 									<p>
 										Roughcut is my first app using React. Users can search for their favorite movies, save them to their database,
 										and then share them on Twitter with their friends. I created this app in the MERN stack. I really enjoy working
-										with React, though it was very challenging at first! The more I learn about React and all it can do, the more
-										excited I am to work with it again.
+										with React, though it was very challenging at first! The more I learn about React and all that it can do, the more
+										excited I am to continue working with it.
 
 									</p>
 								</div>
@@ -179,7 +186,7 @@
 							<li>
 								<div class="collapsible-header"><i class="fa fa-arrow-down" aria-hidden="true" id="drop-down-icon"></i>Link</div>
 								<div class="collapsible-body">
-									<a href="https://github.com/SarahReyes/reyes-final-project" target="_blank"><i class="fa fa-github fa-5x" id="footer-icons" aria-hidden="true"></i></a>
+									<a href="https://github.com/SarahReyes/reyes-final-project" target="_blank"><i class="fa fa-github fa-5x" id="github-icons" aria-hidden="true"></i></a>
 								</div>
 							</li>
 						</ul>
