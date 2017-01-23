@@ -3,6 +3,9 @@
 // materialize features
 
 $(document).ready(function() {
+	// carousel
+	$('.carousel.carousel-slider').carousel({full_width: true});
+
     // side bar nav
 	$('.button-collapse').sideNav({
     	menuWidth: 200, // Default is 240
@@ -19,4 +22,5 @@ $(document).ready(function() {
  	$('.fixed-action-btn').closeFAB();
  	$('.fixed-action-btn.toolbar').openToolbar();
  	$('.fixed-action-btn.toolbar').closeToolbar();
+
 });

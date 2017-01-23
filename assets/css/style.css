@@ -13,6 +13,7 @@ COLORS:
 #4ECDC4 - blue/green
 #515151 - dark gray
 #2A2A2A - hover darker gray
+#C6C6C6 - light gray
 #FFFFFF - white
 */
 
@@ -41,21 +42,20 @@ main {
 
 /*nav bar*/
 nav {
-	background-color: #FFFFFF;
-	color: #515151;
+	background-color: #4ECDC4;
 	border: none;
 	box-shadow: none;
 }
 nav .brand-logo {
 	padding-left: 25px;
-	color: #515151;
+	color: #FFFFFF;
 	font-size: 24px;
 }
 nav ul a {
-	color: #515151;
+	color: #FFFFFF;
 }
 nav a {
-	color: #515151;
+	color: #FFFFFF;
 }
 /*main content*/
 /*about*/
@@ -82,17 +82,27 @@ h3 {
 	font-weight: bold;
 }
 /*portfolio */
+#portfolio-container {
+	width: 100%;
+	background-color: #4ECDC4;
+	padding-bottom: 2em;
+}
+#portfolio {
+	margin-left: 30px;
+	margin-right: 30px;
+}
 #portfolio h2 {
 	color: #FFFFFF;
-	margin-bottom: -30px;
+	padding: 40px;
 	font-weight: 400;
+	font-size: 70px;
 	letter-spacing: 1px;
 }
 .portfolio-img {
 	height: 100%;
 	width: 100%;
-	margin-top: 50px;
-	margin-bottom: -9px;
+	margin-bottom: -8px;
+	border: 2px solid #FFFFFF;
 }
 .collapsible {
 	width: 100%;
