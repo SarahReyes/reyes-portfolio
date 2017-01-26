@@ -102,16 +102,18 @@ nav .nav-wrapper {
 	margin-right: 30px;
 }
 .portfolio-img {
-	height: 70%;
-	width: 70%;
+	height: 60%;
+	width: 60%;
 	margin-top: 40px;
 	margin-bottom: -8px;
 	border: 2px solid #FFFFFF;
 }
 .collapsible {
-	width: 70%;
+	width: 60%;
 	color: #515151;
 	margin: auto;
+	box-shadow: none;
+	border: none;
 }
 .collapsible-body {
 	background-color: #515151;
@@ -123,7 +125,9 @@ nav .nav-wrapper {
 .collapsible-header i {
 	margin-right: -37px;
 }
-
+.collapsible-header {
+	border-bottom: 2px solid #515151;
+}
 #github-icons {
 	color: #FFFFFF;
 }
@@ -157,4 +161,15 @@ footer.page-footer {
 	color: #FFFFFF;
 	font-size: 22px;
 	margin-bottom: 2px;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 500px) {
+	.portfolio-img {
+  		height: 100%;
+  		width: 100%;
+	}
+	.collapsible {
+		width: 100%;
+	}
 }
