@@ -23,6 +23,13 @@ body {
 	min-height: 100vh;
 	flex-direction: column;
 }
+.container {
+	width: 100%;
+}
+.container .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 main {
 	flex: 1 0 auto;
 }
@@ -33,7 +40,9 @@ h2 {
     font-weight: 400;
     font-size: 70px;
     letter-spacing: .6px;
-    border-bottom: 2px solid #FFFFFF;
+}
+.row {
+	margin-bottom: 0px;
 }
 /*scroll to the top button */
 .btn-floating {
@@ -69,47 +78,64 @@ nav .nav-wrapper {
 	border-bottom: 2px solid #FFFFFF;
 }
 /*main content*/
-/*about*/
-#about {
-    color: #FFFFFF;
-    height: 100%;
-	margin-top: 50px;
-	margin-bottom: 100px;
-}
+/*profile pic and title */
 #profile-pic {
 	height: 150px;
 	width: 150px;
 	border-radius: 50%;
 	border: 2px solid #FFFFFF;
-	margin-top: 20px;
+	margin-top: 100px;
 }
-#about p {
-	font-size: 24px;
-	margin-top: 15px;
-	background-color: rgba(0, 0, 0, 0.6);
-	border-radius: 10px;
+#my-title {
+	font-size: 100px;
+	color: #FFFFFF;
+	margin-bottom: 80px;
+}
 
+/*about*/
+#about {
+    color: #515151;
+	font-size: 28px;
+	background-color: #FFFFFF;
+    width: 100%;
+	padding: 50px;
+	line-height: 45px;
 }
+#code-icons {
+	color: #4ECDC4;
+	font-size: 80px;
+	margin-top: 50px;
+}
+#code-descriptions h3 {
+	font-size: 24px;
+	font-weight: 600;
+}
+#code-descriptions p {
+	font-size: 18px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
 /*portfolio */
 #portfolio-container {
 	width: 100%;
 	background-color: #4ECDC4;
-	padding-top: 2em;
-	padding-bottom: 4em;
+	padding-top: 10px;
+	padding-bottom: 70px;
 }
 #portfolio {
 	margin-left: 30px;
 	margin-right: 30px;
 }
 .portfolio-img {
-	height: 60%;
-	width: 60%;
-	margin-top: 40px;
+	height: 100%;
+	width: 100%;
+	margin-top: 20px;
 	margin-bottom: -8px;
 	border: 2px solid #FFFFFF;
 }
 .collapsible {
-	width: 60%;
+	width: 100%;
 	color: #515151;
 	margin: auto;
 	box-shadow: none;
@@ -152,7 +178,6 @@ footer.page-footer {
 }
 #footer-icons {
     color: #FFFFFF;
-	margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
 	font-size: 100px;
@@ -160,16 +185,4 @@ footer.page-footer {
 #contact-footer {
 	color: #FFFFFF;
 	font-size: 22px;
-	margin-bottom: 2px;
-}
-
-/*MOBILE*/
-@media only screen and (max-width: 500px) {
-	.portfolio-img {
-  		height: 100%;
-  		width: 100%;
-	}
-	.collapsible {
-		width: 100%;
-	}
 }

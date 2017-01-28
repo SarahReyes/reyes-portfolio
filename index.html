@@ -47,21 +47,47 @@
         <div class="container">
 			<!-- fixed button scroll to top  -->
 			<div class="fixed-action-btn">
-				<a href="#about" class="btn-floating btn-large" id="scroll-top-btn">
+				<a href="#pic-title" class="btn-floating btn-large" id="scroll-top-btn">
 					<i class="fa fa-arrow-up" aria-hidden="true" id="scroll-top-icon"></i>
 				</a>
 			</div>
-			<!-- about -->
-			<div class="row scrollspy" id="about">
+
+			<!-- picture and title -->
+			<div class="row scrollspy" id="pic-title">
 				<div class="col s12 center-align">
 					<image class="center" src='assets/images/updated-profile-pic.jpg' id='profile-pic'/></image>
-					<h2>web developer</h2>
-					<p>
-						Hi, my name is Sarah. I’m a web developer who works in MongoDB, Express, React, Node.js, HTML, CSS, JavaScript, and MySQL. As someone who started my career as a video editor, I greatly enjoy planning, organizing, and collaboration. I have an eye for detail, and I love solving problems. These skills have translated well into my passion for programming. I look forward to working with you to write, produce, edit, and air our next app. Oh wait, I mean pseudocode, code, debug, and deploy our next app.
-					</p>
+					<div id="my-title">web developer</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- about -->
+		<div class="container">
+			<div class="row scrollspy" id="about">
+				<div class="col s12 center-align">
+					<p>
+						My name is Sarah and I am a developer living in Kansas City. I love writing code, hiking, watching movies, reading a good book, and hugging dogs. As someone who started my career as a video editor, I greatly enjoy planning, organizing, and collaboration. I have an eye for detail, and I love solving problems. These skills have translated well, into my passion for programming.</p>
+				</div>
+				<div class="row" id="code-descriptions">
+					<div class="col s12 m6 l6 center-align">
+						<i class="fa fa-code" aria-hidden="true" id="code-icons"></i>
+						<h3>Front End</h3>
+						<p>
+							JavaScript, JQuery, React, Bootstrap, Materialize, HTML5/CSS3
+						</p>
+					</div>
+					<div class="col s12 m6 l6 center-align">
+						<i class="fa fa-server" aria-hidden="true" id="code-icons"></i>
+						<h3>Back End</h3>
+						<p>
+							Node.js, Express, API/JSON, RESTful API, Firebase, MongoDB, and MySQL
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
 		<!-- portfolio -->
 		<div class="container" id="portfolio-container">
 			<div class="row scrollspy center-align" id="portfolio">
@@ -69,7 +95,7 @@
 
 				<!-- trivia game -->
 				<div class="row">
-					<div class="col s12 center-align">
+					<div class="col s12 m3 l3 center-align">
 						<a href="https://miyazaki-trivia.herokuapp.com/" target="_blank"><img src="assets/images/trivia-s.png" class="portfolio-img"></a>
 						<ul class="collapsible" data-collapsible="accordion">
 							<li>
@@ -101,12 +127,10 @@
 							</li>
 						</ul>
 					</div>
-				</div> <!-- trivia game row END -->
 
 
-				<!-- train scheduler -->
-				<div class="row">
-					<div class="col s12 center-align">
+					<!-- train scheduler -->
+					<div class="col s12 m3 l3 center-align">
 						<a href="https://github.com/SarahReyes/week-7-scheduler" target="_blank"><img src="assets/images/train-s.png" class="portfolio-img"></a>
 						<ul class="collapsible" data-collapsible="accordion">
 							<li>
@@ -131,12 +155,10 @@
 							</li>
 						</ul>
 					</div>
-				</div> <!-- train scheduler row END -->
 
 
-				<!-- eat-a-burger -->
-				<div class="row">
-					<div class="col s12 center-align">
+					<!-- eat-a-burger -->
+					<div class="col s12 m3 l3 center-align">
 						<a href="https://github.com/SarahReyes/week-14-burger" target="_blank"><img src="assets/images/burger-s.png" class="portfolio-img"></a>
 						<ul class="collapsible" data-collapsible="accordion">
 							<li>
@@ -154,7 +176,7 @@
 								</div>
 							</li>
 							<li>
-								<div class="collapsible-header center-align">Links</div>
+								<div class="collapsible-header center-align">Link</div>
 								<div class="collapsible-body">
 									<ul>
 										<li>
@@ -165,12 +187,10 @@
 							</li>
 						</ul>
 					</div>
-				</div> <!-- eat-a-burger row END -->
 
 
-				<!-- roughtcut -->
-				<div class="row">
-					<div class="col s12 center-align">
+					<!-- roughtcut -->
+					<div class="col s12 m3 l3 center-align">
 						<a href="https://github.com/SarahReyes/reyes-final-project" target="_blank"><img src="assets/images/roughcut-s.png" class="portfolio-img"></a>
 						<ul class="collapsible" data-collapsible="accordion">
 							<li>
@@ -195,8 +215,7 @@
 							</li>
 						</ul>
 					</div>
-				</div> <!-- roughtcut row END -->
-
+				</div> <!-- portfolio row END -->
 			</div> <!-- scrollspy END -->
 		</div> <!-- projects container END -->
 
