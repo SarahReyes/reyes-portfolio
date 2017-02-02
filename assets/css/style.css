@@ -25,6 +25,7 @@ body {
 }
 .container {
 	width: 100%;
+	max-width: 2560px;
 }
 .container .row {
     margin-left: 0px;
