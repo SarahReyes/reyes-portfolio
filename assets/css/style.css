@@ -25,15 +25,15 @@ body {
 }
 .container {
 	width: 100%;
-	max-width: 2560px;
+	max-width: none;
+	box-sizing: border-box;
+
 }
 .container .row {
     margin-left: 0px;
     margin-right: 0px;
 }
-main {
-	flex: 1 0 auto;
-}
+
 /*all h2 titles*/
 h2 {
 	color: #FFFFFF;
@@ -88,7 +88,7 @@ nav .nav-wrapper {
 	margin-top: 100px;
 }
 #my-title {
-	font-size: 100px;
+	font-size: 70px;
 	color: #FFFFFF;
 	margin-bottom: 80px;
 }
@@ -120,6 +120,7 @@ nav .nav-wrapper {
 /*portfolio */
 #portfolio-container {
 	width: 100%;
+	max-width: none;
 	background-color: #4ECDC4;
 	padding-top: 10px;
 	padding-bottom: 70px;
